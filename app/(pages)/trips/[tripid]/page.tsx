@@ -11,7 +11,7 @@ interface TripProp {
 }
 
 export default async function TripId({params}: TripProp) {
-  const { tripid } =  params
+  const { tripid } = await params
 
   const session = await auth()
 

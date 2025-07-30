@@ -7,7 +7,7 @@ interface ProfilePageProps {
 }
 
 export default async function Profile({ params }: ProfilePageProps) {
-  const { profileid } = params;
+  const { profileid } = await params;
 
   const session = await auth();
 
