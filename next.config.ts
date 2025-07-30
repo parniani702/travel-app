@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  typescript: {
 
-const nextConfig: NextConfig = {
-  /* config options here */
+    ignoreBuildErrors: true,
+  },
+  images: {
+    domains: ['ka3tior96x.ufs.sh', 'avatars.githubusercontent.com']
+  }
 };
 
-export default nextConfig;
+module.exports = nextConfig;
